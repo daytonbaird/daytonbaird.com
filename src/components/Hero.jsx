@@ -29,10 +29,20 @@ const Hero = () => {
               Hi, {"I'm"} <span className="text-[#1473fa]">Dayton</span>
             </motion.h1>
             <motion.p
-              variants={fadeIn('left', 'tween', 1.6, 1)}
+              variants={fadeIn('left', 'tween', 1.2, 1)}
               className={`${styles.heroSubText} text-white-100 mt-2`}
             >
               I design and build responsive, scalabe products for the web.
+            </motion.p>
+            <motion.p
+              variants={fadeIn('left', 'tween', 2.2, 1)}
+              className="mt-6 text-secondary text-[17px] max-w-3xl leading-[30px]"
+            >
+              Currently building data products over at{' '}
+              <a className="text-blue" href="https://juicemedia.io/">
+                Juice Media
+              </a>
+              .
             </motion.p>
           </motion.section>
         </div>
@@ -40,7 +50,7 @@ const Hero = () => {
 
       {/* Need to figure out what to put here */}
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="sm:hidden md:flex absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

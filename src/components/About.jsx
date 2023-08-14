@@ -17,7 +17,7 @@ export const ServiceCard = ({ index, title, icon }) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
           options={{ max: 45, scale: 1, speed: 450 }}
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <span className="text-[50px] w-18 h-16">{icon}</span>
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
@@ -36,10 +36,21 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
+        variants={fadeIn('', '', 0.2, 1)}
         className="mt-6 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a full-stack developer with a passion for building beautiful and
+        With over {new Date().getFullYear() - 2014} years of hobbyist and
+        professional development experience, {"I've"} learned a thing or two
+        about building high-quality software.
+      </motion.p>
+
+      <motion.p
+        variants={fadeIn('', '', 0.2, 1)}
+        className="mt-6 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        The majority of my experience is within the React ecosystem, but{' '}
+        {"I've"} spent recent years building kick-ass data products using Python
+        and building great mobile experiences in React Native.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

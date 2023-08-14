@@ -1,20 +1,17 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
-  nodejs,
+  nextjs,
+  postgres,
+  graphql,
   mongodb,
-  git,
+  java,
   figma,
   docker,
+  python,
   meta,
   starbucks,
   tesla,
@@ -42,46 +39,54 @@ export const navLinks = [
 
 const competencies = [
   {
-    title: 'Web Developer',
-    icon: web,
+    title: 'Full-Stack Web & Mobile Development',
+    icon: '🚀',
   },
   {
-    title: 'React Native Developer',
-    icon: mobile,
+    title: 'Project Management',
+    icon: '📐',
   },
   {
-    title: 'Backend Developer',
-    icon: backend,
+    title: 'Data Engineering',
+    icon: '📊',
   },
   {
-    title: 'Content Creator',
-    icon: creator,
+    title: 'UI/UX Design',
+    icon: '🎨',
+  },
+  {
+    title: 'Organizational Leadership',
+    icon: '🎯',
+  },
+  {
+    title: 'Training and Mentoring',
+    icon: '📚',
+  },
+  {
+    title: 'Digital & Video Marketing',
+    icon: '🎥',
+  },
+  {
+    title: 'Product Discovery',
+    icon: '🔍',
   },
 ];
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
+    name: 'TypeScript',
+    icon: typescript,
   },
   {
     name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
     name: 'React JS',
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
+    name: 'Redux',
     icon: redux,
   },
   {
@@ -89,20 +94,32 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
+    name: 'python',
+    icon: python,
+  },
+  {
+    name: 'java',
+    icon: java,
   },
   {
     name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'Postgres',
+    icon: postgres,
   },
   {
-    name: 'git',
-    icon: git,
+    name: 'NextJs',
+    icon: nextjs,
+  },
+  {
+    name: 'GraphQL',
+    icon: graphql,
+  },
+  {
+    name: 'Three JS',
+    icon: threejs,
   },
   {
     name: 'figma',
