@@ -19,5 +19,6 @@ module.exports = {
     'no-unused-vars': 'warn',
     'react/prop-types': 'off',
     'react/no-unknown-property': 'off',
+    'react-refresh/only-export-components': 'off',
   },
 };

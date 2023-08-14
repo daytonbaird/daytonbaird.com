@@ -16,7 +16,6 @@ const SectionWrapper = (Component, idName) =>
         <span className="hash-span" id={idName}>
           &nbsp;
         </span>
-        {/* test */}
         <Component />
       </motion.section>
     );
