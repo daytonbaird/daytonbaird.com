@@ -46,7 +46,9 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+          alert(
+            'Thank you for reaching out! I will be in touch as soon as possible.',
+          );
 
           setForm({
             name: '',
@@ -58,7 +60,9 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert('Ahh, something went wrong. Please try again.');
+          alert(
+            'Something went wrong with the EmailJS Service. Please try again.',
+          );
         },
       );
   };
@@ -84,18 +88,18 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="First Last"
+              placeholder="Enter your name"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
+            <span className="text-white font-medium mb-4">Email Address</span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your address?"
+              placeholder="Enter your email address"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -106,7 +110,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              placeholder="Hi, I think we should work together..."
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
