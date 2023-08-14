@@ -29,12 +29,22 @@ import cleara from './company/cleara.png';
 import asincentral from './company/asincentral.png';
 import sneakydeals from './company/sneakydeals.png';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import followup from './followup.png';
+import asin from './asin.png';
+import bolo from './bolo.png';
+import clearaproj from './cleara.png';
+import daytonbairdcom from './daytonbairdcom.png';
+import polybot from './polybot.jpeg';
+import queryenhancer from './queryenhancer.png';
+import hookhoops from './hookhoops.png';
 
 export {
   logo,
+  bolo,
+  clearaproj,
+  daytonbairdcom,
+  polybot,
+  queryenhancer,
   github,
   menu,
   close,
@@ -62,7 +72,7 @@ export {
   cleara,
   sneakydeals,
   asincentral,
-  carrent,
-  jobit,
-  tripguide,
+  followup,
+  asin,
+  hookhoops,
 };

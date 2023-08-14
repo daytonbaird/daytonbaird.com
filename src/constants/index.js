@@ -16,11 +16,16 @@ import {
   asincentral,
   cleara,
   quiktrip,
-  carrent,
-  jobit,
-  tripguide,
+  followup,
+  asin,
+  hookhoops,
   threejs,
   sneakydeals,
+  bolo,
+  clearaproj,
+  daytonbairdcom,
+  polybot,
+  queryenhancer,
 } from '../assets';
 
 export const navLinks = [
@@ -211,12 +216,140 @@ const experiences = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Follow Up',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Created with teachers, trainers, retailers, and salespeople in mind, FollowUp is a simple, easy-to-use CRM that helps you keep track of clients, customers, or students.',
     tags: [
       {
+        name: 'react native',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'sqlite',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'objective-c (ios)',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: followup,
+    source_code_link: 'https://github.com/daytonbaird/FollowUp',
+    other_link:
+      'https://apps.apple.com/us/app/follow-up-keep-in-touch/id1519649560',
+  },
+  {
+    name: 'ASIN Central',
+    description:
+      'Web app and community for Amazon sellers to analyze product data, including sales rank, price, and reviews, and to track product trends over time.',
+    tags: [
+      {
+        name: 'javascript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'css/html',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'hyper',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: asin,
+    other_link: 'https://asincentral.io/',
+    source_code_link: false,
+  },
+  {
+    name: 'HookHoops',
+    description:
+      'One of the ecommerce brands for Sneaky Deals LLC I built and managed, Hookhoops is a magnetic-ring skill toy that can be spun, trickshot, and gamed with.',
+    tags: [
+      {
+        name: 'liquid',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'shopify',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'html/css',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: hookhoops,
+    other_link: 'https://hookhoops.com',
+    source_code_link: false,
+  },
+  {
+    name: 'Cleara',
+    description:
+      'A comprehensive product sourcing app for Amazon sellers that allows users to analyze product data, including sales rank, price, and reviews, and to track product trends over time.',
+    tags: [
+      {
+        name: 'react native',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'figma',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'graphql',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: clearaproj,
+    other_link:
+      'https://www.figma.com/proto/9v5zBzzK36FZLsAZIlckhL/Cleara?node-id=4-107&starting-point-node-id=4%3A107&show-proto-sidebar=1',
+    source_code_link: false,
+  },
+  {
+    name: 'DaytonBaird.com',
+    description:
+      'This website! I built this site using React, TailwindCSS, Framer Motion, Three.js, javascript, vite, postcss and some other technologies. I also generated custom graphics using Figma.',
+    tags: [
+      {
+        name: 'javascript',
+        color: 'blue-text-gradient',
+      },
+      {
         name: 'react',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'three.js',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'figma',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: daytonbairdcom,
+    other_link: 'https://github.com/daytonbaird/daytonbaird.com',
+    source_code_link: 'https://github.com/daytonbaird/daytonbaird.com',
+  },
+  {
+    name: 'BOLO Bot',
+    description:
+      'A product sales analysis API and Discord bot for Amazon sellers built for the ASIN Central community by over 300+ daily active Amazon sellers using Keepa and the Amazon Selling Partner APIs.',
+    tags: [
+      {
+        name: 'typescript',
         color: 'blue-text-gradient',
       },
       {
@@ -224,54 +357,61 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'express',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'docker',
+        color: 'blue-text-gradient',
+      },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: bolo,
+    other_link: 'https://hookhoops.com',
+    source_code_link: false,
   },
   {
-    name: 'Job IT',
+    name: 'Poly Bot',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'General community bot built to manage a partnered Discord server for an educational content creator (JavaScript, MongoDB, Discord.js)',
     tags: [
       {
-        name: 'react',
+        name: 'javascript',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'mongodb',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'discord.js',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: polybot,
+    other_link: 'https://www.youtube.com/@PolyMatter',
+    source_code_link: 'https://github.com/daytonbaird/polybot',
   },
   {
-    name: 'Trip Guide',
+    name: 'Query Enhancer (Sunhacks)',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      '2018 Hackathon project. A command line search engine that allows the user to search for what was said inside a YouTube video via autogenerated captions. Built with Python.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'mongodb',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'google apis',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: queryenhancer,
+    other_link: 'https://github.com/daytonbaird/query-enhancer',
+    source_code_link: 'https://github.com/daytonbaird/query-enhancer',
   },
 ];
 

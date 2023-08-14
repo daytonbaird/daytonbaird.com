@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  other_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -23,28 +24,32 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="cursor-pointer bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+        <span onClick={() => window.open(other_link)}>
+          <div className="relative w-full h-[230px]">
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
+            />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
+            {source_code_link && (
+              <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+                <div
+                  onClick={() => window.open(source_code_link, '_blank')}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img
+                    src={github}
+                    alt="source code"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
+              </div>
+            )}
           </div>
-        </div>
+        </span>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
@@ -57,7 +62,7 @@ const ProjectCard = ({
               key={`${name}-${tag.name}`}
               className={`text-[14px] ${tag.color}`}
             >
-              #{tag.name}
+              {tag.name}
             </p>
           ))}
         </div>
@@ -71,7 +76,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Personal Projects</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -79,11 +84,11 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Nullam sit amet tempor ligula. Proin dapibus dolor ante, in accumsan
-          mi tincidunt ut. Vestibulum at efficitur ipsum, quis dictum erat.
-          Etiam semper, tellus ut pretium accumsan, nunc quam auctor eros, eget
-          cursus est justo non ipsum. Aliquam erat volutpat. Nam fringilla in
-          est id luctus.
+          Explore a small showcase of my personal projects, where {"I've"} put
+          theory into practice, honed my skills, and tackled real-world
+          challenges. Each represents a piece of my development journey. Dive in
+          to see what {"I've "}
+          been working on.
         </motion.p>
       </div>
 
