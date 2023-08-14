@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import {
   About,
@@ -11,10 +12,25 @@ import {
 } from './components';
 
 const App = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(width < 768);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+    setIsMobile(window.innerWidth < 768);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <StarsCanvas />
+        {!isMobile && <StarsCanvas />}
         <Navbar />
         <Hero />
         <About />

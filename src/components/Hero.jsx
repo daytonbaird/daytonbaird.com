@@ -7,11 +7,9 @@ import { fadeIn } from '../utils/motion';
 import { staggerContainer } from '../utils/motion';
 import { StarsCanvas } from './canvas';
 
-const Hero = () => {
+const Hero = (isMobile) => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <StarsCanvas />
-
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -23,19 +21,19 @@ const Hero = () => {
             viewport={{ once: true, amount: 0.25 }}
           >
             <motion.h1
-              variants={fadeIn('left', 'tween', 0.2, 1)}
+              variants={fadeIn('left', 'tween', 1.2, 1)}
               className={`${styles.heroHeadText} text-white`}
             >
               Hi, {"I'm"} <span className="text-[#1473fa]">Dayton</span>
             </motion.h1>
             <motion.p
-              variants={fadeIn('left', 'tween', 1.2, 1)}
+              variants={fadeIn('left', 'tween', 1.8, 1)}
               className={`${styles.heroSubText} text-white-100 mt-2`}
             >
               I design and build responsive, scalabe products for the web.
             </motion.p>
             <motion.p
-              variants={fadeIn('left', 'tween', 2.2, 1)}
+              variants={fadeIn('left', 'tween', 2.8, 1)}
               className="mt-6 text-secondary text-[17px] max-w-3xl leading-[30px]"
             >
               Currently building data products over at{' '}
@@ -47,6 +45,8 @@ const Hero = () => {
           </motion.section>
         </div>
       </div>
+
+      {!isMobile && <StarsCanvas />}
 
       <div className="sm:hidden md:flex absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

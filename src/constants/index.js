@@ -366,7 +366,7 @@ const projects = [
       },
     ],
     image: bolo,
-    other_link: 'https://hookhoops.com',
+    other_link: false,
     source_code_link: false,
   },
   {
