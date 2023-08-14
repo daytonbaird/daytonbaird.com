@@ -12,10 +12,10 @@ import {
   figma,
   docker,
   python,
-  meta,
+  altice,
+  asincentral,
+  cleara,
   quiktrip,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -150,20 +150,19 @@ const experiences = [
   {
     title: 'Front End Web Developer',
     company_name: 'Sneaky Deals LLC',
-    icon: tesla,
+    icon: quiktrip,
     iconBg: '#E6DEDD',
     date: 'Jan 2021 - Feb 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      `Served as end-to-end designer and sole developer for a myriad of e-commerce brands, increasing sales 2x-3x through efficient CRO-forward design and development`,
+      `Developed and maintained 10+ e-commerce websites, including a custom Shopify theme using Shopify Liquid, JavaScript, and CSS`,
+      `Launched 3 e-commerce brands from ideation to launch, including brand identity, product sourcing, and website development`,
     ],
   },
   {
     title: 'Web Developer',
     company_name: 'Shopify',
-    icon: shopify,
+    icon: quiktrip,
     iconBg: '#383E56',
     date: 'Jan 2022 - Jan 2023',
     points: [
@@ -176,7 +175,7 @@ const experiences = [
   {
     title: 'Full stack Developer',
     company_name: 'Meta',
-    icon: meta,
+    icon: quiktrip,
     iconBg: '#E6DEDD',
     date: 'Jan 2023 - Present',
     points: [

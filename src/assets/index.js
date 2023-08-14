@@ -23,8 +23,6 @@ import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
-import meta from './company/meta.png';
-import shopify from './company/shopify.png';
 import quiktrip from './company/quiktrip.png';
 import altice from './company/altice.png';
 import cleara from './company/cleara.png';
@@ -59,8 +57,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
   quiktrip,
   altice,
   cleara,
