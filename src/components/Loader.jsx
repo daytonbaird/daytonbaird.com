@@ -1,5 +1,4 @@
 import { Html, useProgress } from '@react-three/drei';
-import { progress } from 'framer-motion';
 
 const Loader = () => {
   const { progress } = useProgress();

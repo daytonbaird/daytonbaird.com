@@ -25,8 +25,11 @@ import threejs from './tech/threejs.svg';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
+import quiktrip from './company/quiktrip.png';
+import altice from './company/altice.png';
+import cleara from './company/cleara.png';
+import asincentral from './company/asincentral.png';
+import sneakydeals from './company/sneakydeals.png';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
@@ -58,8 +61,11 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
-  tesla,
+  quiktrip,
+  altice,
+  cleara,
+  sneakydeals,
+  asincentral,
   carrent,
   jobit,
   tripguide,

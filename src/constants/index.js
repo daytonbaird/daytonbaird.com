@@ -13,7 +13,7 @@ import {
   docker,
   python,
   meta,
-  starbucks,
+  quiktrip,
   tesla,
   shopify,
   carrent,
@@ -29,7 +29,7 @@ export const navLinks = [
   },
   {
     id: 'work',
-    title: 'Work',
+    title: 'My Work',
   },
   {
     id: 'contact',
@@ -133,21 +133,23 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    title: 'Corporate Trainer',
+    company_name: 'QuikTrip',
+    icon: quiktrip,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'July 2016 - March 2021',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      `Built React Native mobile app for QuikTrip's training team, written in JavaScript using the React
+      Native CLI and SQLite, saving each employee 5 hours per week on average and increasing trainee retention rates by 12%`,
+      `Orchestrated and executed comprehensive leadership training for over 400 individuals, crafting both technical and
+      non-technical documentation (60+ documents)`,
+      `Worked closely with key stakeholders on optimizing design, increasing employee retention averages by 20%`,
+      `Awarded the "Best of the Best" award for leadership of the highest-performing QuikTrip team`,
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
+    title: 'Front End Web Developer',
+    company_name: 'Sneaky Deals LLC',
     icon: tesla,
     iconBg: '#E6DEDD',
     date: 'Jan 2021 - Feb 2022',
@@ -183,33 +185,6 @@ const experiences = [
       'Implementing responsive design and ensuring cross-browser compatibility.',
       'Participating in code reviews and providing constructive feedback to other developers.',
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ];
 
@@ -279,4 +254,4 @@ const projects = [
   },
 ];
 
-export { competencies, technologies, experiences, testimonials, projects };
+export { competencies, technologies, experiences, projects };
