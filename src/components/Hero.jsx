@@ -30,7 +30,7 @@ const Hero = (isMobile) => {
               variants={fadeIn('left', 'tween', 3.5, 1)}
               className={`${styles.heroSubText} text-white-100 mt-2`}
             >
-              I design and build responsive, scalabe products for the web.
+              I design and build responsive, scalable products for the web.
             </motion.p>
             <motion.p
               variants={fadeIn('left', 'tween', 5.5, 1)}
