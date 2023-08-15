@@ -26,7 +26,7 @@ const ProjectCard = ({
         }}
         className="cursor-pointer bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <span onClick={() => window.open(other_link)}>
+        <span onClick={() => other_link && window.open(other_link)}>
           <div className="relative w-full h-[230px]">
             <img
               src={image}

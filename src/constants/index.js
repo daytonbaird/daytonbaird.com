@@ -158,7 +158,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Engineer',
+    title: 'Founding Engineer',
     company_name: 'Cleara Inc',
     icon: cleara,
     iconBg: '#dcd4d4',

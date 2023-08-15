@@ -54,6 +54,7 @@ const Hero = (isMobile) => {
             <motion.div
               animate={{ y: [0, 24, 0] }}
               transition={{
+                delay: 3,
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: 'loop',
