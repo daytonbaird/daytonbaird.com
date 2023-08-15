@@ -21,19 +21,19 @@ const Hero = (isMobile) => {
             viewport={{ once: true, amount: 0.25 }}
           >
             <motion.h1
-              variants={fadeIn('left', 'tween', 1.2, 1)}
+              variants={fadeIn('left', 'tween', 2, 1)}
               className={`${styles.heroHeadText} text-white`}
             >
               Hi, {"I'm"} <span className="text-[#1473fa]">Dayton</span>
             </motion.h1>
             <motion.p
-              variants={fadeIn('left', 'tween', 1.8, 1)}
+              variants={fadeIn('left', 'tween', 3.5, 1)}
               className={`${styles.heroSubText} text-white-100 mt-2`}
             >
               I design and build responsive, scalabe products for the web.
             </motion.p>
             <motion.p
-              variants={fadeIn('left', 'tween', 2.8, 1)}
+              variants={fadeIn('left', 'tween', 5.5, 1)}
               className="mt-6 text-secondary text-[17px] max-w-3xl leading-[30px]"
             >
               Currently building data products over at{' '}
